@@ -1,0 +1,101 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    width: 100%;
+    background-color: #e6f2ff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 100vh;
+    background-color: #e6f2ff;
+    flex-direction: column;
+}
+
+h1 {
+    color: #002960;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Form container */
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/* Form Box */
+.form-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #1d64c2;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input and button styling */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #1d64c2;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* Links to toggle between login and register */
+.toggle-form {
+    text-align: center;
+    color: #1d64c2;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

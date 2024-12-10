@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-content">
+    <h1>Welcome to the Sports Platform</h1>
+    <div class="form-container">
+        <div class="form-box" id="login-box">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" id="login-email" required>
+                <input type="password" placeholder="Password" id="login-password" required>
+                <button type="submit">Login</button>
+                <p class="toggle-form" onclick="toggleForm()">Don't have an account? Register</p>
+            </form>
+        </div>
+        <div class="form-box" id="register-box" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" placeholder="Username" id="register-username" required>
+                <input type="email" placeholder="Email" id="register-email" required>
+                <input type="password" placeholder="Password" id="register-password" required>
+                <input type="role" placeholder="role" id="register-role" required>
+                <button type="submit">Register</button>
+                <p class="toggle-form" onclick="toggleForm()">Already have an account? Login</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
